@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tap Dodger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="row">
+      <div><strong>Score:</strong> <span id="score">0</span></div>
+      <button id="pauseBtn" aria-label="Pause">&#9208;</button>
+    </div>
+    <div id="hint">Tippe links/rechts zum Bewegen. Tippe unten: Start/Restart.</div>
+  </div>
+
+  <canvas id="c" width="360" height="640" aria-label="Spielcanvas"></canvas>
+
+  <div id="touch">
+    <div class="zone" id="leftZone" aria-label="Links"></div>
+    <div class="zone" id="rightZone" aria-label="Rechts"></div>
+    <div class="start" id="startZone" aria-label="Start"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
